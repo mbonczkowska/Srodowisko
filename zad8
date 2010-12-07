@@ -1,0 +1,1 @@
+last -400 | grep pts | cud -d " " -f 1

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+liczba=`python -c "import random; print random.randrange(1,50);"`
+echo Dowolna liczba od 1 do 50:
+$liczba
+echo Teraz podaj wlasna :
+read liczb
+
+while (($liczba!=$liczb));do
+
+if (($liczba > $liczb));then
+echo "Za malo"
+else
+echo "Za duzo"
+
+fi
+sleep 1
+
+done
+echo oki
+

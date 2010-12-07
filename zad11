@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Czy zebra jest ssakiem?"
+read odp
+if [ $odp == "tak" ]; then
+echo "to dobrze"
+elif [ $odp == "nie" ]; then
+echo "to tez :)"
+fi
+

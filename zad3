@@ -1,0 +1,15 @@
+#!/bin/bash
+
+procesor=`uname --processor`
+freespace=`df -h /`
+version=`uname --release`
+freemem=`cat /proc/meminfo  | grep MemFree | cut -d " " -f 9-10`
+totalmem=`cat /proc/meminfo | grep MemTotal | cut -d " " -f 8-9`
+
+
+echo Procesor: $procesor
+echo Disk space: $freespace
+echo System: $version
+echo Free memory: $freemem
+echo Total memory: $totalmem
+

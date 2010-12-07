@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Podaj nazwe uzytkownika"
+read USER
+echo "Podaj date"
+read DATE
+echo "Username: ${USER}"
+echo "Date: ${DATE}"
+loghistory=`last -1000 | grep $1 | cut -d " " -f 11-12` | wc -l`
+echo User ${USER} logged $loghistory on ${DATE}

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+liczba=`python -c "import random; print random.randrange(1,50);"`
+echo $liczba
+echo teraz podaj liczbe:
+read liczb
+
+if  (($liczba > $liczb)); then
+echo "Za malo"
+elif (($liczba < $liczb)); then
+echo "Za duzo"
+else
+echo "Ok"
+fi

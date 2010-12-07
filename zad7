@@ -1,0 +1,7 @@
+1.znak kropki przypisuje pierwszemu znakowi znak !
+2.\ przed kropką przerzuca ! na koniec pierwszego zdania
+różnica przypisanie ! w inne miejsce
+3.g powoduje zmiane wszystkich znaków na !
+4.\ przed kropką przerzuca ! na koniec dwóch zdań
+różnica g dotyczy obu zdań, bez g tylko jednego
+
