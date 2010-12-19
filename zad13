@@ -2,8 +2,8 @@
 
 liczba=`python -c "import random; print random.randrange(1,50);"`
 echo Dowolna liczba od 1 do 50:
-$liczba
-echo Teraz podaj wlasna :
+echo $liczba
+echo Teraz podaj wlasna:
 read liczb
 
 while (($liczba!=$liczb));do

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+file=`./genlogs.sh $1 | sed -e 's/.*SESS: //' -e 's/\C.*//' | uniq -c`
+
+echo $file

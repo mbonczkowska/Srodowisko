@@ -1,0 +1,7 @@
+
+
+1.find . -perm g+w,a+w,u+w
+2.find /home -atime -7
+3.find /home -size +100k
+4.find /home -size 0b
+5.find /home -atime +30 -size +500k

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+file=`./genlogs.sh $1 | sed -e 's/.*ACTION: //' -e 's/(.*//' -e 's/:.*//' | sort -d -u`
+
+echo $file

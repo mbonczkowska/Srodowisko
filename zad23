@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "$PWD"
+for file in `find`
+do echo $file
+pom=`head $file -n 1`
+if [ $pom "#!/bin/bash" ]
+then 
+echo "skrypt"
+else 
+echo "nie jest to skrypt"
+fi
+done

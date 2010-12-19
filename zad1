@@ -1,5 +1,5 @@
 #!/bin/bash
 
-user=`who | grep $1 | wc -l | sed -e 's/0/nie/'| sed -e 's/[1-9]/tak/'`
+user=`who | grep "$1" | wc -l | sed -e 's/0/nie/'| sed -e 's/[1-9]/tak/'`
 
 echo $user

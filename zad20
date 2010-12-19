@@ -1,0 +1,4 @@
+#!/bin/bash
+
+file=`./genlogs.sh 1 | grep "Make transfer for amount" | sed -e 's/.*amount: //' -e 's/(.*//' | sort -d | uniq -1`
+echo $file

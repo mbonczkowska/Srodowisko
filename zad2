@@ -1,7 +1,6 @@
 #!/bin/bash
 
-sala=`last -2000 | grep $1 | grep labpk | sed -e 
-'s/.*p\([0-9]*\)-.*/\1/'`
+sala=`last -2000 | grep $1 | grep labpk | sed -e 's/.*p\([0-9]*\)-.*/\1/'` ;
 
-echo $sala
+echo $sala ;
 
